@@ -51,7 +51,7 @@ SongsWorker.perform_async(params[:file].path)
     redirect_to songs_path
   end
 
-  
+
 
   private
 
@@ -59,4 +59,3 @@ SongsWorker.perform_async(params[:file].path)
     params.require(:song).permit(:title, :artist_name)
   end
 end
-
